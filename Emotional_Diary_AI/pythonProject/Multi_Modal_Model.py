@@ -14,7 +14,7 @@ def train_emotion_model(data_paths):
     for path in data_paths:
         data = np.load(path, allow_pickle=True).item()
         imgs = data['imgs']
-        emotion1 = data['emotionl1']
+        emotion1 = data['emotion2']
         labels = data['label']
 
         X_data.extend(imgs)
